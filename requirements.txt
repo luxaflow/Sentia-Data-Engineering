@@ -1,0 +1,27 @@
+1. Main Requirements
+  - Public Cloud Solution
+  - Resources: Infrastructure as Code (IaC)
+  - Code: Python, R, C# or Explain different solution
+  - Maintain Rationale
+
+2. Client Expectations
+  - ETL Process with Analysis
+    - Structured & Unstructured Data (MongoDB & SQL)
+  - Some unstructured data needs to needs to be normalized to structured data
+  - Analysis & Visualization Tools (PowerBI has been mentioned)
+  - Logging for network Activity
+  - Costs
+  - Enterprise Big Data Achitecture (Scalabilty)
+  - Infrastructure & ETL Pipelines Deployments CI/CD
+
+3. Client Wishes
+  - Additional Data Sources later in time.
+  - Preference for PaaS Solutions
+  - Machine Learning to read from source
+  - ExpressRoute or VPN
+
+4. Additional Requirements
+  - Code should be delivered in CI/CD Pipelines
+  - Dont forget documentation (Manuals & Instructions)
+  - Keep track of time invested
+  
