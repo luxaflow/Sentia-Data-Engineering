@@ -1,0 +1,23 @@
+# Cloud
+Azure is a versatile Cloud platform which offers an array of fitting SaaS solutions which meet the client’s requirements.
+
+# Maintenance
+Azure Devops is a complete platform which can store code, build, deploy and maintain planning. This will more than cover the needs to maintain the majority of this project. Note that a Site to Site connection might require minor configuration on premise.
+
+# Azure Data Lake store
+Azure Data Lake Store is a cost-effective solution because it has been built on Azure Blob Storage. The solution is also scalable for Enterprise Big (Unstructured) Data.
+
+# ETL
+Azure Data Factory covers the requirements for managing the ETL pipelines. When limitations are found data processing can be handled by writing some Python scripts with a (juptyer) notebook. Azure Data Factory also covers the ability to make use of ML in ETL pipelines
+
+# Analysis
+Azure Synapse Analytics is a platform which has some overlap with Azure Data Factory, but has a greater focus on Analysis. This platform will create the ability to start small but scale to a Enterprise Big Data solution. The scalability of this platform is future proof.
+
+# Visualization
+Microsoft PowerBI is a visualization tool which connects to several different data sources. It also offers easy to share dashboarding and report building.
+
+# VPN
+Azure ExpressRoute is an expensive solution and if not, the databases are in a unsupported data center a migration to another data center might be required. Azure Site to Site connection offers a secure network connection between Azure and the OnPrem data sources
+
+# Logging
+Azure Log Analytics offers a wide array of logging option. With Azure Log Analytics several logs can be collected queried and display with alerts. Action (Logic Apps, Email, Webhooks, etc.) can be bound to the alerts which can be used to determine a course of action.
