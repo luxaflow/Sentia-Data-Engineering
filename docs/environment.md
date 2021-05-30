@@ -72,36 +72,6 @@ Azure Monitor will run queries on network and ETL logs form Azure Log Analytics.
 
 #### Integratoin
 Azure Logic Apps will allow for quick and easy integration with SMT API's when any Azure Monitor alerts are trigge
-### Logging
-#### Azure Log Analytics
-Azure log analytics is a scalable log analyzing solution which allows for network logging On Premise (with use of agents) and within the cloud. Queries can be build on top of the solution which offer insights and alerts on network logging. On top of this it also offers logging for other Azure services.
-
-
-## ETL
-### Azure Data Factory
-Azure Data Factory is an ETL PaaS Solution on the Azure Platform which is flexible and scalable. Data Factory is a easy to use and integrate solution which will cover the customers ETL requirements. Data Factory is a very scalable solution. Azure Data factory offers build in Machine learning capabilities for the ETL process.
-
-
-## Storage
-### Strucured and unstrucured data
-Several options are available within azure for storage. Data can be stored in several types of storage. Azure will support NoSQL, SQL and unstructured data solution. 
-
-
-## Analystics
-### Azure Synapse Analytics
-Azure Synapse analytics is versatile PaaS solution which allows for quering all data sourcesa specified by the customer. It is scalable to the extend of building big data analytics solutions and has a directi integration into PowerBi. It will allow for querying any type of data previously mentioned. Azure Synapse Analytics also makes machine learning solutions available to the analaytics part of the data
-
-## Visualization
-### PowerBi
-PowerBi is a microsoft data analytics vizualiztion tool which will show meaning full outputs of data made accessable by Azure synapse analytics.
-
-## Other Tools
-### Azure monitor
-This will be used for informing on network related events and alerting on broken data which can in turned be handled in a SMT of some sort.
-
-### Logic Apps
-Logic Apps will integrate Azure monitor to the required sources. Such as informing engineers on occuring issues by creating and maintaining incidents in their SMT. It will also be possible to notify engineer by use of a webhook to a loction like a slock or teams channel.
-
 
 ## NOTES
 
