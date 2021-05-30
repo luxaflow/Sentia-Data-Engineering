@@ -30,6 +30,6 @@ output "vhub_address_prefix" {
  value = azurerm_virtual_hub.vhub.vhub_address_prefix
 }
 
-output "vhub_name" {
-  value = azurerm_vpn_gateway.vpng.name
+output "vpng_name" {
+  value = azurerm_vpn_gateway
 }
