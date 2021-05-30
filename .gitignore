@@ -7,6 +7,7 @@
 **/.terraform/*
 tf-backend.config
 
+
 # .tfstate files
 *.tfstate
 *.tfstate.*
