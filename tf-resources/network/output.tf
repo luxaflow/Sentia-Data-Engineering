@@ -1,5 +1,5 @@
 output "network_resource_group_name" {
-  value = azurerm_resource_group.rg.name
+  value = azurerm_resource_group.network_rg.name
 }
 
 output "vnet_name" { 
