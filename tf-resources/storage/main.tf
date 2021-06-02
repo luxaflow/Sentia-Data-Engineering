@@ -30,7 +30,6 @@ data "azurerm_key_vault_secret" "sql_server_password" {
   key_vault_id = data.azurerm_key_vault.existing.id
 }
 
-
 resource "azurerm_sql_server" "sql_server" {
   name                         = var.sql_server_name
   resource_group_name          = azurerm_resource_group.data_storage_rg.name
