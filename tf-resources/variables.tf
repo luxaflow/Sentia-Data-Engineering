@@ -32,7 +32,7 @@ variable "network_rg_name" {
 // Key Vault
 
 variable "keyvault_rg_name" {
-  type    = string
+  type        = string
   description = "Name of the resource group containing the required keyvault"
 }
 
@@ -43,24 +43,24 @@ variable "keyvault_name" {
 
 variable "keyvault_sql_server_username" {
   type        = string 
-  
+  description = "Name for secret for sql server username"
   sensitive   = true
 }
 
 variable "keyvault_sql_server_password" {
-  type    = string
+  type        = string
   description = "Name for secret for sql server password"
   sensitive   = true
 }
 
 variable "keyvault_aad_object_id" {
-  type = string
+  type        = string
   description = "Name for secret for azure active directory object id"
   sensitive   = true
 }
 
 variable "keyvault_aad_username" {
-  type    = string
+  type        = string
   description = "Name for secret for azure active directory username"
   sensitive   = true
 }
@@ -91,7 +91,7 @@ variable "vwan_name" {
 
 variable "vhub_name" {
   type        = string
-  
+  description = "Name of customer vhub"
 }
 
 variable "vhub_address_prefix" {
