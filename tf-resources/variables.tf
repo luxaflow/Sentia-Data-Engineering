@@ -19,14 +19,51 @@ varaiable "fallback_location" {
 
 // Resource Groups
 
-variables "etl_rg" {
-  type = string
+variables "etl_rg_name" {
+  type        = string
   description = "Name of resouce group for Azure Data Factory and its resources"
 }
 
-// Data Factory Variables
+variable "network_rg_name" {
+  type        = string
+  description = "Name of resouce group for VPN Gateway and its resources"
+}
+
+// Data Factory
 
 variable "data_factory_name" {
   type        = string
   description = "Name of the Azure Data Factory Workspace"
+}
+
+// Network (VPN Gateway)
+
+variable "vnet_name" {
+  type        = string
+  description = "Name of vnet"
+}
+
+variable "vnet_address_space" {
+  type        = list(string)
+  description = "List of IP address range(s) for vnet"
+}
+
+variable "vwan_name" {
+  type        = string
+  description = "Name of customer vwan"
+}
+
+variable "vhub_name" {
+  type        = string
+  
+}
+
+variable "vhub_address_prefix" {
+  type        = string
+  description = "IP Address prefix for vhub"
+}
+
+variable "vpn_gateway_name" {
+  type        = string
+  description = "Name of customer vhub"
 }
