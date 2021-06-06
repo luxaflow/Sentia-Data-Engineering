@@ -94,4 +94,4 @@ Azure Log Analytics allows for storing metrics from multiple Azure services. The
 2. For (initial) infrastructure deployment read the terraform [readme.md](tf-resources/readme.md)
 
 ## Sample.xlsx
-I would advise on creating a pipeline for moving the data into a database (SQL). This will allow for a reusable ETL proces for similar files in teh future. This also remove a part of the complexity of writing only code.
+I would advise on creating a pipeline in Data Factory for moving the data into a database (SQL). This will allow for a reusable ETL proces for similar files in teh future. This also remove a part of the complexity of writing only code.
