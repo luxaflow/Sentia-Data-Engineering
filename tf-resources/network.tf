@@ -25,3 +25,27 @@ resource "azurerm_vpn_gateway" "vpng" {
   resource_group_name = azurerm_resource_group.network_rg.name
   virtual_hub_id      = azurerm_virtual_hub.vhub.id
 }
+
+resource "azurerm_monitor_diagnostic_setting" "vpng_diagnostic_settings" {
+  name                        = var.vpng_diagnostic_settings_name
+  target_resource_id          = azurerm_vpn_gateway.vpng.id
+  log_analytics_workspace_id  = azurerm_log_analytics_workspace.id
+
+  log {
+    category = "AuditEvent"
+    enabled  = false
+
+    retention_policy {
+      enabled = false
+    }
+  }
+
+  metric {
+    category = "AllMetrics"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+    }
+  }
+}

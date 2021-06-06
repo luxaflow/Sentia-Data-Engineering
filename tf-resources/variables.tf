@@ -87,6 +87,11 @@ variable "data_factory_name" {
   description = "Name of the Azure Data Factory Workspace"
 }
 
+variable "data_factory_diagnostic_settings_name" {
+  type        = string
+  description = "Name of Diagnostic setting for Data Factory"
+}
+
 // Network (VPN Gateway)
 
 variable "vnet_name" {
@@ -117,6 +122,11 @@ variable "vhub_address_prefix" {
 variable "vpn_gateway_name" {
   type        = string
   description = "Name of customer vhub"
+}
+
+variable "vpng_diagnostic_settings_name" {
+  type        =  string
+  description = "Name of diagnostic setting for VPN Gateway" 
 }
 
 // Data Lake
@@ -157,4 +167,11 @@ variable "cosmosdb_account_name" {
 variable "synapse-workspace-name" {
   type        = string
   description = "Name of Synapse Analytics Workspace"
+}
+
+// Log Analytics
+
+variable "log_analytics_workspace_name" {
+  type        = string
+  description = "Name of Log Analytics Workspace" 
 }
