@@ -7,3 +7,8 @@ resource "azurerm_resource_group" "network_rg" {
   name     = var.network_rg_name
   location = var.main_location
 }
+
+resource "azurerm_resource_group" "storage_rg" {
+  name     = var.storage_rg_name
+  location = "West Europe"
+}

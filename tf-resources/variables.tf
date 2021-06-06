@@ -1,8 +1,13 @@
 // Main Variables
 
-variable "env" {
+variable "environment" {
   type    = string
   default = "dev"
+
+  validation {
+    condition = var.environment == "dev" || var.environment == "test" || var.environment == "uat" || var.environment == "prod" 
+    error_message = "allowed values are dev, test, uat or prod for the environment."
+  }
 }
 
 variable "main_location" {
@@ -11,7 +16,7 @@ variable "main_location" {
   description = "Main region location to be used for resources"
 }
 
-varaiable "fallback_location" {
+variable "fallback_location" {
   type        = string
   default     = "northeurope"
   description = "Fallback region location to be used for resources, region pair with westeurope"
@@ -19,12 +24,17 @@ varaiable "fallback_location" {
 
 // Resource Groups
 
-variables "etl_rg_name" {
+variable "etl_rg_name" {
   type        = string
   description = "Name of resouce group for Azure Data Factory and its resources"
 }
 
 variable "network_rg_name" {
+  type        = string
+  description = "Name of resouce group for VPN Gateway and its resources"
+}
+
+variable "storage_rg_name" {
   type        = string
   description = "Name of resouce group for VPN Gateway and its resources"
 }
@@ -102,4 +112,37 @@ variable "vhub_address_prefix" {
 variable "vpn_gateway_name" {
   type        = string
   description = "Name of customer vhub"
+}
+
+// Data Lake
+
+variable "data_lake_gen2_fs_name" {
+  type        = string
+  description = "Name of Data Lake Gen2 File System"
+}
+
+// SQL
+
+variable "sql_server_name" {
+  type        = string
+  description = "Name of sql server instance"
+}
+
+variable "sql_database_name" {
+  type        = string
+  description = "Name of SQL database" 
+}
+
+// Storage Account
+
+variable "storage_account_name" {
+  type        = string
+  description = "Name of storage account"
+}
+
+// CosmosDB
+
+variable "cosmosdb_account_name" {
+  type        = string
+  description = "Name of CosmosDB Account Name"
 }
