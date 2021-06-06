@@ -39,6 +39,11 @@ variable "storage_rg_name" {
   description = "Name of resouce group for VPN Gateway and its resources"
 }
 
+variable "analytics_rg" {
+  type        = string
+  description = "Name of resouce group for Synapse Analytics and its resources"
+}
+
 // Key Vault
 
 variable "keyvault_rg_name" {
@@ -145,4 +150,11 @@ variable "storage_account_name" {
 variable "cosmosdb_account_name" {
   type        = string
   description = "Name of CosmosDB Account Name"
+}
+
+// Synapse Analytics
+
+variable "synapse-workspace-name" {
+  type        = string
+  description = "Name of Synapse Analytics Workspace"
 }

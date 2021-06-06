@@ -12,6 +12,10 @@ output "storage_rg_name" {
   value = azurerm_resource_group.storage_rg.name
 }
 
+output "analytics_rg_name" {
+  value = azurerm_resource_group.synapse_analytics_rg.name
+}
+
 // Data Factory
 
 output "data_factory_name" {
@@ -86,4 +90,10 @@ output "cosmosdb_account_name" {
 
 output "cosmosdb_location" {
   value = azurerm_resource_group.data_storage_rg.location
+}
+
+// Synapse Analytics
+
+output "synapse_workspace_name" {
+  value = azurerm_synapse_workspace.synapse_workspace.name
 }
