@@ -95,3 +95,17 @@ Azure Log Analytics allows for storing metrics from multiple Azure services. The
 
 ## Sample.xlsx
 I would advise on creating a pipeline in Data Factory for moving the data into a database (SQL). This will allow for a reusable ETL proces for similar files in teh future. This also remove a part of the complexity of writing only code.
+
+## Time
+I spend a fair amount of time researching data models and concepts to have a better understanding of the requirements and what would be best for the customer. Here is a short overview of roughly the amount of time is spent on this project.
+
+| Task                | Time |
+|---------------------|------|
+| Distil Requirements | 0:30 |
+| Determine Services  | 1:00 |
+| Write Reasoning     | 1:00 |
+| Initial Terraform   | 2:00 |
+| Merge Terraform     | 1:00 |
+| Terraform Manual    | 1:00 |
+| Research            | 2:00 |
+| Grand Total         | 8:30 |
